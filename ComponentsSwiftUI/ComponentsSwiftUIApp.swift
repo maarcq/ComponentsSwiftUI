@@ -12,7 +12,8 @@ struct ComponentsSwiftUIApp: App {
     var body: some Scene {
         WindowGroup {
             // AnimatedMeshGradient()
-            HapticsButtons()
+            // HapticsButtons()
+            RotateGestureView()
         }
     }
 }
