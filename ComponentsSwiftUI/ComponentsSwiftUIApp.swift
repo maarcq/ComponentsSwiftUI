@@ -14,7 +14,8 @@ struct ComponentsSwiftUIApp: App {
             // AnimatedMeshGradient()
             // HapticsButtons()
             // RotateGestureView()
-            CustomPaywall()
+            // CustomPaywall()
+            SymbolsMulticolor()
         }
     }
 }
