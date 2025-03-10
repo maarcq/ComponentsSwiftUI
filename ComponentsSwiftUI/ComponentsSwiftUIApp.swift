@@ -11,7 +11,8 @@ import SwiftUI
 struct ComponentsSwiftUIApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            // AnimatedMeshGradient()
+            HapticsButtons()
         }
     }
 }
