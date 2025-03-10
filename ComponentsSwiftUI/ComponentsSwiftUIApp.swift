@@ -13,7 +13,8 @@ struct ComponentsSwiftUIApp: App {
         WindowGroup {
             // AnimatedMeshGradient()
             // HapticsButtons()
-            RotateGestureView()
+            // RotateGestureView()
+            CustomPaywall()
         }
     }
 }
