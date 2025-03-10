@@ -152,23 +152,43 @@ struct SymbolsMulticolor: View {
                         .compositingGroup()
                         .shadow(radius: 15)
                     }
+                    VStack {
+                        Image(.iOS18)
+                            .resizable()
+                            .scaledToFill()
+                            .frame(width: 100, height: 50)
+                            .mask {
+                                Text("Apple")
+                                    .fontWeight(.heavy)
+                                    .font(.title)
+                            }
+                    }
                 }
                 
                 Divider()
                 
                 // MARK: stroke() & strokeBorder()
-                HStack {
-                    Rectangle()
-                        .fill(.black)
-                        .frame(width: 50, height: 40)
-                    Rectangle()
-                        .fill(.black)
-                        .stroke(.orange, lineWidth: 5)
-                        .frame(width: 50, height: 40)
-                    Rectangle()
-                        .fill(.black)
-                        .strokeBorder(.orange, lineWidth: 5)
-                        .frame(width: 50, height: 40)
+                HStack(spacing: 15) {
+                    VStack {
+                        Text("Rectangle")
+                        Rectangle()
+                            .fill(.black)
+                            .frame(width: 80, height: 60)
+                    }
+                    VStack {
+                        Text("stroke()")
+                        Rectangle()
+                            .fill(.black)
+                            .stroke(.orange, lineWidth: 5)
+                            .frame(width: 80, height: 60)
+                    }
+                    VStack {
+                        Text("strokeBorder()")
+                        Rectangle()
+                            .fill(.black)
+                            .strokeBorder(.orange, lineWidth: 5)
+                            .frame(width: 80, height: 60)
+                    }
                 }
             }
         }
