@@ -15,7 +15,8 @@ struct ComponentsSwiftUIApp: App {
             // HapticsButtons()
             // RotateGestureView()
             // CustomPaywall()
-            SymbolsMulticolor()
+            // SymbolsMulticolor()
+            FindNavigator()
         }
     }
 }
