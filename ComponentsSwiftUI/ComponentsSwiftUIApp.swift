@@ -11,12 +11,7 @@ import SwiftUI
 struct ComponentsSwiftUIApp: App {
     var body: some Scene {
         WindowGroup {
-            // AnimatedMeshGradient()
-            // HapticsButtons()
-            // RotateGestureView()
-            // CustomPaywall()
-            // SymbolsMulticolor()
-            FindNavigator()
+            ContentView()
         }
     }
 }
